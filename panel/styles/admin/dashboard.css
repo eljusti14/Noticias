@@ -1,0 +1,136 @@
+/* Estilo del contenedor principal */
+.container {
+    margin-top: 20px; /* Reducido para que esté más cerca de la parte superior */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Estilo del fieldset personalizado */
+.custom-fieldset {
+    border: 1px solid #00000056; /* Borde azul */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del legend */
+.custom-fieldset legend {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo del título "Noticias" */
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px; /* Reducido el margen para que esté más cerca del contenido */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo de la cuadrícula de noticias */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo de cada tarjeta de noticias */
+.news-card {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 250px;
+    height: 320px;
+    position: relative;
+    padding-bottom: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo de las imágenes */
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Títulos de las noticias */
+.news-card h2 {
+    font-size: 16px;
+    margin: 10px 15px;
+}
+
+/* Estilo de la categoría */
+.category {
+    position: absolute;
+    top: 10px;  /* Coloca la categoría en la parte superior */
+    left: 10px; /* Alinea la categoría a la izquierda */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+    color: white;  /* Texto blanco */
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilo para mostrar el nombre del autor debajo de la categoría */
+.author {
+    font-size: 15px;
+    color: #000000;
+    margin: 10px 15px; /* Espaciado para separar del borde */
+    font-weight: bold; /* Poner en negrita */
+    position: absolute;
+    bottom: 5px;  /* Colocamos el texto más cerca del borde inferior */
+    left: 0px;
+}
+
+/* Contenedor de los botones de acción (Editar y Borrar) */
+.action-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column; /* Botones uno encima del otro */
+    gap: 5px; /* Espacio entre los botones */
+}
+
+.action-buttons a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.edit-button {
+    background-color: #28a745; /* Color verde para editar */
+}
+
+.edit-button:hover {
+    background-color: #218838; /* Verde más oscuro en hover */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Color rojo para borrar */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Rojo más oscuro en hover */
+}

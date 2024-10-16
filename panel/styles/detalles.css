@@ -1,0 +1,87 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1100px; /* Aumenté el máximo ancho */
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.39); /* Sombra más prominente */
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px; /* Margen superior */
+            right: 20px; /* Margen derecho */
+            padding: 10px 15px; /* Espaciado interno */
+            background-color: #111111; /* Color de fondo azul */
+            color: white; /* Color de texto */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cursor de mano */
+            text-decoration: none; /* Sin subrayado */
+            font-size: 16px; /* Tamaño de la fuente */
+        }
+
+        .back-button:hover {
+            background-color: #757272; /* Color más oscuro al pasar el ratón */
+            color: #fffefe;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: block; /* Cambiado para que funcione con el margen */
+            margin-left: auto; /* Margen izquierdo automático */
+            margin-right: auto; /* Margen derecho automático */
+        }
+        h1 {  
+            font-size: 48px;              /* Aumenta el tamaño de la fuente */  
+            color: #000000;              /* Cambia el color a un tono más oscuro y elegante */  
+            margin-bottom: 20px;         /* Aumenta el margen inferior para más espacio */  
+            font-weight: bold;           /* Pone el texto en negrita */  
+            text-transform: uppercase;   /* Pone el texto en mayúsculas para darle énfasis */  
+            text-align: center;          /* Centra el título */  
+            letter-spacing: 1px;        /* Aumenta el espaciado entre letras */  
+            text-shadow: 1px 1px 2px rgba(255, 38, 38, 0.1); /* Añade una ligera sombra al texto */  
+        }
+        .category {
+            display: inline-block;
+            background-color: #0e0d0d44; /* Color más suave */
+            color: #000000; /* Texto menos resaltado */
+            padding: 4px 12px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 6px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .description {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .texto {
+            font-size: 18px; /* Mantiene un tamaño legible */
+            line-height: 1.8; /* Buena separación entre líneas para mayor legibilidad */
+            color: #333; /* Un tono de gris oscuro para menos contraste agresivo que el negro */
+            margin-bottom: 30px; /* Espacio al final del párrafo */
+            font-family: 'Roboto', sans-serif; /* Tipografía moderna y legible */
+            font-weight: 400; /* Peso regular de fuente */
+            text-align: justify; /* Alinea el texto de forma justificada para una presentación más limpia */
+            word-spacing: 0.5px; /* Un poco de espacio entre las palabras para mayor claridad */
+            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Un sutil sombreado para darle profundidad al texto */
+        }
+        .creator {
+            font-size: 16px;
+            color: #1b1919;
+            margin-bottom: 20px;
+        }

@@ -1,0 +1,90 @@
+body{
+    background-color: #f5f0f0;
+}
+
+/* Estilos del contenedor */
+.categorias_container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f5f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Título */
+.categorias_title {
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la tabla */
+.categorias_table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.categorias_table th, .categorias_table td {
+    padding: 16px 24px; /* Mantener el padding original */
+    text-align: left;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: #000000;
+    font-size: 18px; /* Aumentar el tamaño del texto (ajustado) */
+}
+
+/* Encabezado de la tabla */
+.categorias_table th {
+    background-color: #000000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Estilo de las filas alternadas */
+.categorias_table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.categorias_table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo de los botones de eliminar */
+.categorias_actions a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #d9534f;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.categorias_actions a.btn-eliminar:hover {
+    background-color: #ca231e;
+}
+
+/* Estilo para el botón de crear nueva categoría */
+.categorias-btn-crear {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.categorias-btn-crear:hover {
+    background-color: #999898;
+}

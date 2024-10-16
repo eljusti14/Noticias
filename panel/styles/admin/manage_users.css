@@ -1,0 +1,84 @@
+            /* Estilos generales del cuerpo */
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f5f0f0;  /* Fondo más suave */
+                margin: 0;
+                padding: 40px;
+                color: #333; /* Color de texto más oscuro */
+            }
+    
+            /* Estilo de la tabla */
+            .manage_users_table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 40px;
+                background-color: white;
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+                border-radius: 10px;
+                overflow: hidden; /* Para que los bordes redondeados se mantengan */
+            }
+    
+            /* Estilo de las celdas de la tabla */
+            th, td {
+                padding: 20px;
+                text-align: left;
+                border-bottom: 1px solid #e1e1e1; /* Borde suave */
+                color: #000000; /* Color de texto más suave */
+            }
+    
+            /* Encabezado de la tabla */
+            th {
+                background-color: #333;
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                letter-spacing: 1px; /* Espaciado de letras */
+            }
+    
+            /* Estilo de las acciones (editar/eliminar) */
+            .manage_users_actions a {
+                text-decoration: none;
+                padding: 12px 20px; /* Aumento de espacio */
+                background-color: #007bff; /* Color de fondo */
+                color: white; /* Texto blanco */
+                border-radius: 5px;
+                font-weight: bold;
+                transition: background-color 0.3s;
+            }
+    
+            .manage_users_actions a:hover {
+                background-color: #0056b3; /* Efecto hover */
+            }
+    
+            .manage_users_actions a.delete {
+                background-color: #d9534f; /* Color para eliminar */
+            }
+    
+            .manage_users_actions a.delete:hover {
+                background-color: #c9302c; /* Efecto hover para eliminar */
+            }
+    
+            /* Link de salir */
+            .exit-link {
+                display: inline-block; /* Esto lo hace funcionar como un botón */
+                margin-top: 20px; /* Añade un margen superior */
+                padding: 10px 20px; /* Tamaño del botón */
+                background-color: black; /* Fondo negro */
+                color: white; /* Texto blanco */
+                text-decoration: none; /* Elimina el subrayado del enlace */
+                border-radius: 5px; /* Bordes redondeados */
+                font-weight: bold; /* Texto en negrita */
+                text-align: center; /* Centra el texto dentro del botón */
+                transition: background-color 0.3s ease; /* Transición suave para el hover */
+            }
+    
+            /* Efecto hover: cambia a gris cuando se pasa el mouse */
+            .exit-link:hover {
+                background-color: gray; /* Fondo gris al pasar el ratón */
+                color: white; /* Asegura que el texto siga siendo blanco */
+            }
+    
+            /* Para centrar el botón */
+            .container {
+                text-align: center; /* Centra el contenido dentro del contenedor */
+            }

@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0f0; /* Fondo claro */
+    color: #000000; /* Texto oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* Fondo del formulario */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    max-width: 400px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.category-form div {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    font-size: 18px;
+    color: #000000;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #ffffff; /* Fondo del input */
+    color: #000000;
+}
+
+.input-field:focus {
+    border-color: #000000; /* Bordes claros al hacer focus */
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000000; /* Botón con fondo oscuro */
+    color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #999898; /* Cambia el fondo al pasar el cursor */
+    color: #ffffff;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #999898;
+}
+
+/* Estilo para los mensajes de error */
+.error-message {
+    color: #ff6666;
+    text-align: center;
+    font-weight: bold;
+}

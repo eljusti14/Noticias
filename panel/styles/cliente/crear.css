@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f0f0;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Aislar los estilos solo para el formulario con clase .form-container */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Título del formulario */
+.form-container h2 {
+    color: #000000; /* Color del título */
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las etiquetas */
+.form-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilo de los campos de texto (input, textarea) */
+.form-container input[type="text"], .form-container input[type="file"], .form-container textarea, .form-container select {
+    width: 100%; /* Asegurarse de que los campos ocupen todo el ancho */
+    max-width: 100%; /* Prevenir desbordamientos */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
+}
+
+/* Estilo de los campos de texto al estar en foco */
+.form-container input[type="text"]:focus, .form-container input[type="file"]:focus, .form-container textarea:focus, .form-container select:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+/* Estilo de los botones */
+.form-container button {
+    background-color: #000000; /* Color verde para el botón */
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-container button:hover {
+    background-color: #999898;/* Color más oscuro al pasar el ratón */
+    color: #000000;
+}
+
+/* Estilo para el enlace de volver al listado */
+.form-container a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de los mensajes de error */
+.form-container p {
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+/* Espaciado entre elementos */
+.form-container div {
+    margin-bottom: 20px;
+}
+
+/* Asegurar que el menú no sea afectado por los estilos del formulario */
+.menu2, .menu2 * {
+    all: unset;
+}
