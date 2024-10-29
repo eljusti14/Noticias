@@ -89,5 +89,23 @@ $stmt->close();
             <button type="submit">Actualizar</button>
         </form>
     </div>
+
+    <script src="https://cdn.tiny.cloud/1/s8nis6wm14py0d2i0yl5gbzpi95a6qro2hh9r44g80029vjm/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> 
+
+<script>
+// Inicializar TinyMCE
+tinymce.init({
+    selector: '#texto', // Asegúrate de que el ID coincida
+    menubar: false, // Opcional: ocultar el menú superior
+    plugins: 'link image code', // Configuración básica
+    toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | code', // Barra de herramientas básica
+    setup: function(editor) {
+        // Sincronizar el contenido de TinyMCE con el textarea antes de enviar el formulario
+        editor.on('change', function() {
+            tinymce.triggerSave();
+        });
+    }
+});
+</script>
 </body>
 </html>

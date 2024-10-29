@@ -15,7 +15,7 @@
 .news-card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(235, 235, 235, 0.2);
     overflow: hidden;
     transition: transform 0.3s;
     width: 100%;
@@ -30,7 +30,7 @@
 
 .news-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 12px rgba(243, 9, 9, 0.4);
 }
 
 .news-card img {

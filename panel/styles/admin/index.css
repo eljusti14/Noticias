@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: arial;
+    font-family: Arial, sans-serif;
     background-image: url('bg.png');
     background-color: #cccccc;
 }
@@ -27,7 +27,7 @@ body {
     text-align: center;
     height: 40px;
     margin-bottom: 30px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #ffffff;
     font-size: 20px;
 }
 
@@ -53,12 +53,13 @@ body {
 .buttons:hover {
     background: #ffffff; /* Cambia a blanco al pasar el cursor */
     color: #000000; /* Cambia el texto a negro para mayor contraste */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .form-login p {
     height: 40px;
     text-align: center;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #ffffff;
 }
 
 .form-login a {
@@ -75,4 +76,30 @@ body {
     color: red;
     padding: 10px;
     text-align: center;
+}
+
+/* Ajustes para el input de contraseña */
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px; /* Espacio para el ícono */
+}
+
+.password-container i {
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #000;
+}
+
+/* Animación para el ícono */
+.password-container i:hover {
+    color: #706f6f; /* Color de hover para el ícono */
+    transition: color 0.2s ease-in-out;
 }

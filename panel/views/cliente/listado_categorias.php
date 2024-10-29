@@ -22,14 +22,12 @@ $resultado = $conx->query("SELECT * FROM categorias");
         <table class="tabla-categorias">
             <thead>
                 <tr>
-                    <th>Id</th>
                     <th>Nombre de la Categoría</th>
                 </tr>
             </thead>
             <tbody>
                 <?php while($fila = $resultado->fetch_object()) { ?>
                     <tr>
-                        <td><?php echo $fila->id_categorias; ?></td>
                         <td><?php echo $fila->nombre; ?></td>
                     </tr>
                 <?php } ?>

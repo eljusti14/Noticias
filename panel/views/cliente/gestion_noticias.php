@@ -24,6 +24,7 @@ $resultado = $stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Noticias Recientes</title>
     <link rel="stylesheet" href="../../styles/cliente/gestion_noticias.css">
 
@@ -56,10 +57,10 @@ $resultado = $stmt->get_result();
                         </td>
                         <td><?php echo htmlspecialchars($fila->categoria); ?></td>
                         <td class="actions">
-                            <a href="editar.php?id_noticias=<?php echo $fila->id_noticias; ?>">Editar</a>
+                            <a href="editar.php?id_noticias=<?php echo $fila->id_noticias; ?>"><i class='bx bxs-edit-alt'></i></a>
                         </td>
                         <td class="actions">
-                            <a href="../../controllers/noticias/delete.php?id_noticias=<?php echo $fila->id_noticias; ?>" class="delete" onclick="return confirm('¿Está seguro que desea eliminar esta noticia?')">Eliminar</a>
+                            <a href="../../controllers/noticias/delete.php?id_noticias=<?php echo $fila->id_noticias; ?>" class="delete" onclick="return confirm('¿Está seguro que desea eliminar esta noticia?')"><i class='bx bxs-trash'></i></a>
                         </td>
                     </tr>
                 <?php } ?>

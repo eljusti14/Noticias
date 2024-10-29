@@ -1,100 +1,147 @@
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f0f0;
-            color: #333;
-            margin: 0;
-            padding: 40px;
-        }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f0f0;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+}
 
-        /* Aislar los estilos solo para el formulario con clase .form-container */
-        .form-container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-            max-width: 800px;
-            margin: 0 auto; /* Centrar horizontalmente */
-        }
+/* Aislar los estilos solo para el formulario con clase .form-container */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    max-width: 800px;
+    margin: 0 auto; /* Centrar horizontalmente */
+}
 
-        /* Título del formulario */
-        .form-container h2 {
-            color: #000000; /* Color del título */
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+/* Título del formulario */
+.form-container h2 {
+    color: #000000; /* Color del título */
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
-        /* Estilo de las etiquetas */
-        .form-container label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 8px;
-        }
+/* Estilo de las etiquetas */
+.form-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
 
-        /* Estilo de los campos de texto (input) */
-        .form-container input[type="text"],
-        .form-container input[type="email"],
-        .form-container input[type="date"],
-        .form-container input[type="password"] {
-            width: 100%; /* Asegurarse de que los campos ocupen todo el ancho */
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            margin-bottom: 15px;
-            font-size: 14px;
-            box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
-        }
+/* Estilo de los campos de texto (input) */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="date"],
+.form-container input[type="password"] {
+    width: 100%; /* Asegurarse de que los campos ocupen todo el ancho */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
+}
 
-        /* Estilo de los campos de texto al estar en foco */
-        .form-container input[type="text"]:focus,
-        .form-container input[type="email"]:focus,
-        .form-container input[type="date"]:focus,
-        .form-container input[type="password"]:focus {
-            border-color: #000000;
-            outline: none;
-        }
+/* Estilo de los campos de texto al estar en foco */
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="date"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: #000000;
+    outline: none;
+}
 
-        /* Estilo del botón */
-        .form-container input[type="submit"] {
-            background-color: #000000; /* Color negro para el botón */
-            color: white;
-            font-size: 16px;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            display: block;
-            width: 100%; /* Asegurarse de que el botón ocupe todo el ancho */
-            margin-top: 20px; /* Margen superior para separar del último input */
-        }
+/* Estilo del botón */
+.form-container input[type="submit"] {
+    background-color: #000000; /* Color negro para el botón */
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%; /* Asegurarse de que el botón ocupe todo el ancho */
+    margin-top: 20px; /* Margen superior para separar del último input */
+}
 
-        .form-container input[type="submit"]:hover {
-            background-color: #999898; /* Color gris al pasar el ratón */
-            color: #000000;
-        }
+.form-container input[type="submit"]:hover {
+    background-color: #999898; /* Color gris al pasar el ratón */
+    color: #000000;
+}
 
-        /* Estilo para el enlace de volver */
-        .form-container a {
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #000000;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-        }
+/* Estilo para el enlace de volver */
+.form-container a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
 
-        .form-container a:hover {
-            text-decoration: underline;
-        }
+.form-container a:hover {
+    text-decoration: underline;
+}
 
-        /* Espaciado entre elementos */
-        .form-container div {
-            margin-bottom: 20px;
-        }
+/* Espaciado entre elementos */
+.form-container div {
+    margin-bottom: 20px;
+}
 
-        /* Para asegurar que el menú no sea afectado por los estilos del formulario */
-        .menu_admin, .menu_admin * {
-            all: unset;
-        }
+/* Para asegurar que el menú no sea afectado por los estilos del formulario */
+.menu_admin, .menu_admin * {
+    all: unset;
+}
+/* Ajustes para el input de contraseña */
+.password-container {
+position: relative;
+}
+
+.password-container input {
+width: 100%;
+padding-right: 40px; /* Espacio para el ícono */
+}
+
+.password-container i {
+font-size: 22px;
+position: absolute;
+right: 10px;
+top: 40%;
+transform: translateY(25%);
+cursor: pointer;
+color: #000;
+}
+
+/* Animación para el ícono */
+.password-container i:hover {
+color: #706f6f; /* Color de hover para el ícono */
+transition: color 0.2s ease-in-out;
+}
+.form-container {
+    position: relative; /* Añadir esta línea */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    max-width: 800px;
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilo para el enlace de volver en la parte superior derecha del contenedor */
+.form-container a.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
+.form-container a.back-button:hover {
+    background-color: rgb(0, 0, 0); /* Color gris al pasar el ratón */
+    color: #fffefe;
+}

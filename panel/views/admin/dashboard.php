@@ -18,6 +18,7 @@ $resultado = $conx->query("
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Panel de control</title>
     <link rel="stylesheet" href="../../styles/admin/dashboard.css">
 </head>
@@ -37,7 +38,7 @@ $resultado = $conx->query("
             
             <!-- Contenedor de los botones de acción -->
             <div class="action-buttons">
-                <a href="../../controllers/noticias/delete_admin.php?id_noticias=<?php echo $fila->id_noticias; ?>" class="delete-button" title="Borrar">Borrar</a>
+                <a href="../../controllers/noticias/delete_admin.php?id_noticias=<?php echo $fila->id_noticias; ?>" class="delete-button" title="Borrar"><i class='bx bxs-trash'></i></a>
             </div>
         </div>
     <?php } ?>

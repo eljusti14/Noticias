@@ -54,7 +54,7 @@ if (isset($_GET['id_noticias'])) {
     </div>
 
     <!-- Texto de la noticia -->
-    <div class="texto"><?php echo nl2br(htmlspecialchars($noticia->texto)); ?></div>
+    <div class="texto"><?php echo html_entity_decode($noticia->texto); ?></div>
 </div>
 
 </body>

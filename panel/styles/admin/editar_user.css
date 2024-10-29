@@ -1,4 +1,4 @@
-  body {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f0f0;
     color: #333;
@@ -97,4 +97,51 @@
 /* Para asegurar que el menú no sea afectado por los estilos del formulario */
 .menu_admin, .menu_admin * {
     all: unset;
+}
+/* Ajustes para el input de contraseña */
+.password-container {
+   position: relative;
+}
+
+.password-container input {
+   width: 100%;
+   padding-right: 40px; /* Espacio para el ícono */
+}
+
+.password-container i {
+   font-size: 22px;
+   position: absolute;
+   right: 10px;
+   top: 40%;
+   transform: translateY(80%);
+   cursor: pointer;
+   color: #000;
+}
+
+/* Animación para el ícono */
+.password-container i:hover {
+   color: #706f6f; /* Color de hover para el ícono */
+   transition: color 0.2s ease-in-out;
+}
+.form-container {
+   position: relative; /* Añadir esta línea */
+   background-color: #ffffff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+   max-width: 800px;
+   margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilo para el enlace de volver en la parte superior derecha del contenedor */
+.form-container a.back-button {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+
+}
+
+.form-container a.back-button:hover {
+   background-color: rgb(0, 0, 0); /* Color gris al pasar el ratón */
+   color: #fffefe;
 }

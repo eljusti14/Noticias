@@ -23,10 +23,9 @@ $stmt->close();
 <html lang="es">  
 <head>  
     <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Crear Noticia</title>  
     <link rel="stylesheet" href="../../styles/cliente/crear.css">
-
 </head>  
 <body>  
     <div class="form-container">
@@ -73,6 +72,26 @@ $stmt->close();
     </div>
     
     <!-- Cargar TinyMCE al final del body -->
+    <script src="https://cdn.tiny.cloud/1/s8nis6wm14py0d2i0yl5gbzpi95a6qro2hh9r44g80029vjm/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> 
+
+<script>
+  tinymce.init({
+    selector: '#texto', // Asegúrate de que el ID coincida
+    menubar: true, // Mostrar la barra de menú completa
+    plugins: 'advlist autolink lists link image charmap preview anchor searchreplace visualblocks code fullscreen insertdatetime media table paste help wordcount', // Agregar más plugins
+    toolbar: 'undo redo | formatselect | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | code fullscreen preview', // Herramientas mejoradas
+    toolbar_sticky: true, // Mantener la barra de herramientas visible al desplazarse
+    image_advtab: true, // Permitir la configuración avanzada de imágenes
+    content_css: '//www.tiny.cloud/css/codepen.min.css', // Estilos
+    height: 400, // Aumentar el tamaño del editor
+    setup: function(editor) {
+        // Sincronizar el contenido de TinyMCE con el textarea antes de enviar el formulario
+        editor.on('change', function() {
+            tinymce.triggerSave();
+        });
+    }
+ });
+</script>
 
 </body>  
-</html>  
+</html> 

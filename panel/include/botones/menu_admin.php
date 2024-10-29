@@ -86,9 +86,7 @@ define('BASE_URL', 'http://localhost/programacion/Noticias/panel');
 </head>
 <body>
 
-    <!-- Contenedor de contenido principal -->
     <div id="contenido">
-        <!-- Botón para abrir el menú -->
         <button class="abrir-btn" onclick="abrirMenu()">☰ Menú</button>
 
         <!-- Menú lateral -->

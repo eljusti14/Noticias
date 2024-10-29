@@ -31,8 +31,10 @@ if (isset($_GET['id_usuarios'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Editar Usuario</title>
-    <link rel="stylesheet" href="../../../styles/admin/editar.css">
+    <link rel="stylesheet" href="../../../styles/admin/editar_user.css">
 
 </head>
 <body>
@@ -54,6 +56,7 @@ if (isset($_GET['id_usuarios'])) {
         <div>
             <label for="email">Email</label><br>
             <input type="email" name="email" id="email" placeholder="Email" value="<?php echo htmlspecialchars($usuarios->email); ?>" required>
+            <div id="error-email" style="color: red;"></div>
         </div><br>
         
         <div>
@@ -61,9 +64,11 @@ if (isset($_GET['id_usuarios'])) {
             <input type="text" name="numero_celular" id="numero_celular" placeholder="Número Celular" value="<?php echo htmlspecialchars($usuarios->numero_celular); ?>" required>
         </div><br>
 
-        <div>
+        <div class="password-container">
             <label for="password">Contraseña</label><br>
-            <input type="password" name="password" id="password" placeholder="Contraseña" value="<?php echo htmlspecialchars($usuarios->password); ?>" required>
+            <input class="controls" type="password" name="password" id="password" placeholder="Contraseña" value="<?php echo htmlspecialchars($usuarios->password); ?>" required>
+            <i class='bx bx-show-alt' id="togglePassword"></i>
+            <div id="error-password" style="color: red;"></div>
         </div><br>
 
         <div>
@@ -76,9 +81,10 @@ if (isset($_GET['id_usuarios'])) {
         echo "<p style='color: red; text-align: center;'>Error: Todos los campos deben ser completado correctamente.</p>";
     }
     ?>
-
         <input type="submit" value="Editar">
     </form>
+    <a href="manage_users.php" class="back-button">Volver</a>
 </div>
+<script src="../../../scripts/expresiones_regulares/expresion_regular_editarUser.js"></script>
 </body>
 </html>

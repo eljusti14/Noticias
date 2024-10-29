@@ -7,11 +7,11 @@ $error_message = isset($_GET['error']) ? $_GET['error'] : '';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/admin/index.css">
     <title>Panel de control</title>
-    <link rel="stylesheet" href="styles/admin/login.css">
     </head>
 <body>
-
 <section class="form-login">
     <h5>Formulario Login</h5>
     <form action="controllers/validar_admin.php" method="POST">
@@ -23,12 +23,13 @@ $error_message = isset($_GET['error']) ? $_GET['error'] : '';
     <?php endif; ?>
       
         <input class="controls" type="email" id="email" name="email" placeholder="Email" required>
-        <input class="controls" type="password" name="password" id="password" placeholder="Contraseña" required>
+        <div class="password-container">
+            <input class="controls" type="password" name="password" id="password" placeholder="Contraseña" required>
+            <i class='bx bx-show-alt' id="togglePassword"></i>
+        </div>
         <input class="buttons" type="submit" value="Iniciar Sesión">
-
-
     </form>
 </section>
-
+<script src="scripts/mostrar_contraseña.js"></script>
 </body>
 </html>
